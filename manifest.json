@@ -1,0 +1,26 @@
+
+{
+  "manifest_version": 3,
+  "name": "srinidhi",
+  "version": "2.0",
+  "content_scripts": [
+    {
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": ["content.js"]
+        
+        
+    }
+  ],
+  "host_permissions": [
+    "http://localhost/new/try.php"
+  ],
+  "background": {
+    "service_worker":"background.js"
+  },
+  "permissions": [
+    "tabs"
+  ]
+
+}
